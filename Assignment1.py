@@ -2,7 +2,7 @@
 Task 1: Start Begin by asking the user to enter the temperature in Fahrenheit.
 """
 
-temp = input("Please enter the temperature in Fahrenheit: ")
+# temp = input("Please enter the temperature in Fahrenheit: ")
 
 """
 Task 2: Temperature Conversion Write a function that converts the Fahrenheit temperature to Celsius. Remember that the formula is (Fahrenheit - 32) * 5/9.
@@ -29,11 +29,18 @@ while True:
         print(
             f"{user_input} degrees Fahrenheit is {celsius_conversion(user_input):.2f} degrees Celsius"
         )
+        break
 
 
 """
 Task 4: Finally Add a finally block that thanks the user for using the weather forecast application, ensuring that this message is displayed regardless of whether an exception was caught or not.
 """
+
+
+def celsius_conversion(temp):
+    conversion = (temp - 32) * 5 / 9
+    return conversion
+
 
 while True:
     try:
